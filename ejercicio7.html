@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - sacar datos de un numero</title>
+</head>
+
+<body>
+    <script>
+        var v1, v2, v3;
+        v1 = prompt("Introduzca un numero");
+        v2 = prompt("Introduzca un numero");
+        v3 = prompt("Introduzca un numero");
+
+        if (v1 == 0 && v2 == 0 && v3 == 0) {
+            alert("Todas las variable son 0");
+        } //if
+        if (v1 > 0 && v2 > 0 && v3 > 0) {
+            alert("Todas las variables son positivas");
+            alert("Todas las variables son del mismo signo");
+        } //if
+        if (v1 < 0 && v2 < 0 && v3 < 0) {
+            alert("Todas las variables son del mismo signo");
+        } //if
+        if (v1 != v2) {
+            if (v2 != v3) {
+
+                if (v1 != v3) {
+                    alert("Todos sus valores son distintos");
+                } else {
+                    alert("Dos de sus valores coinciden");
+                }
+            } else {
+                alert("Dos de sus valores coinciden");
+            }
+        } //if
+        else {
+            alert("Dos de sus valores coinciden");
+        }
+        if (v1 > v2) {
+            if (v2 > v3) {
+                alert("V2 está comprendido entre v1 y v3");
+            }
+        }
+        if (v3 > v2) {
+            if (v2 > v1) {
+                alert("V2 está comprendido entre v1 y v3");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
